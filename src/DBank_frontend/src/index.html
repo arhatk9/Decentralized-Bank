@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DBank</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link type="text/css" rel="stylesheet" href="main.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css" />
+
+  </head>
+<body>
+  <div class="flex">
+    <img class="cover_logo" src="default.png" alt="DBank logo" />
+    <div class="container">
+      <i class="fa-solid fa-gear settings"></i>
+      <div class="settingscontainer depwit">
+        <h2 class="rate-title depwit_title">Interest Rate</h2>
+        <span class="rate-placeholder">Enter Interest Rate (Autosaved)</span>
+        <input id="user-rate" type="number" step="0.01" min=0 name="inputrate" value="" placeholder="Default: 0%"
+          required />
+      </div>
+      <div class="balance">
+        <h1>Balance: $<span id="value"></span></h1><i class="fa-solid fa-rotate refresh"></i>
+      </div>
+      <div class="divider"></div>
+
+      <ul class="tg-list">
+        <li class="tg-list-item">
+          <input class="tgl tgl-skewed" id="toggle" type="checkbox" /><label class="tgl-btn"
+            toggle-off="SWITCH TO WITHDRAWALS" toggle-on="SWITCH TO DEPOSITS" for="toggle"></label></li>
+      </ul>
+      <form action="#">
+          <div class="depwit">
+            <h2 class="depwit_title">Deposit Here</h2>
+            <input id="user-amount" type="number" step="0.01" min=0 name="inputamount" value=""
+              placeholder="Enter amount to Deposit" required />
+          </div>
+          <div class="spinner">
+            <i class="fa-solid fa-circle-notch fa-spin fa-3x"></i>
+          </div>
+          <input id="submit-btn" type="submit" value="Click To Deposit" />
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
